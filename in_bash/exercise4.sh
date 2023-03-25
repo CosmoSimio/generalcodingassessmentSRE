@@ -7,7 +7,7 @@
 valid_braces() {
   braces="$1"
   stack=()
-  brace_map=( [")"]="(" ["]"]="[" ["}"]="{" )
+  declare -A brace_map=( [")"]="(" ["]"]="[" ["}"]="{" )
 
   for ((i=0; i<${#braces}; i++)); do
     brace="${braces:$i:1}"
