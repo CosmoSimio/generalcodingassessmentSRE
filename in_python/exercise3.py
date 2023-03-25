@@ -33,3 +33,8 @@ def order_weight(s: str) -> str:
     sorted_numbers = sorted(numbers, key=lambda x: (weight(x), x))
     
     return ' '.join(sorted_numbers)
+
+# Example
+s = "56 65 74 100 99 68 86 180 90"
+result = order_weight(s)
+print(result)  # Output: "100 180 90 56 65 74 68 86 99"

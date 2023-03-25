@@ -40,3 +40,9 @@ def valid_braces(braces: str) -> bool:
         return True
     else:
         return False
+    
+# Examples
+print(valid_braces("(){}[]"))    # Output: True
+print(valid_braces("(}"))         # Output: False
+print(valid_braces("[(])"))       # Output: False
+print(valid_braces("([{}])"))     # Output: True

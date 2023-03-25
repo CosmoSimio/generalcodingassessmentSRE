@@ -25,3 +25,7 @@ def solution(number):
             total_sum += i
             
     return total_sum
+
+# Examples
+print(solution(10))   # Output: 23
+print(solution(200))  # Output: 9168

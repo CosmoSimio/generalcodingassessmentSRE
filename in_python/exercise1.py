@@ -1,23 +1,22 @@
 # You are going to be given a word. Your job is to return the middle character of the word.
 # If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
-# get_middle(str)
-# Find the middle character(s) of a word.
+# get_middle(str) == Finds the middle character(s) of a word.
 
 # Parameters
-# str: String - word to pull middle characters from
+# str: String == word to pull middle characters from
 
 # Return Value
-# String - letter(s) in the middle of the word
+# String == letter(s) in the middle of the word
 
 # Constraints
 # 0 < str < 1000
 
-# Examples
-# str	Return Value
-# "test"	"es"
-# "testing"	"t"
-# "middle"	"dd"*/
+# Examples:
+# str	    Return Value
+# "test"	  "es"
+# "testing"	  "t"
+# "middle"	  "dd"*/
 
 def get_middle(s):
     length = len(s)
@@ -31,3 +30,8 @@ def get_middle(s):
         # Odd length
         middle = length // 2
         return s[middle]
+    
+# Examples
+print(get_middle("test"))     # Output: "es"
+print(get_middle("testing"))  # Output: "t"
+print(get_middle("middle"))   # Output: "dd"
