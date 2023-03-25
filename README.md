@@ -1,1 +1,1 @@
-Basic coding exercises in `Python` and in `Bash`
+Some basic coding exercises in `Python` and in `Bash`
